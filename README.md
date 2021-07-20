@@ -1,4 +1,4 @@
-# Asistiletisim-Php-Sens-Sms
+# Asistiletisim-Php-Send-Sms
 ========
 
 Hata Kodları : 
