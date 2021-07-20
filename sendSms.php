@@ -1,11 +1,6 @@
 <?php 
-
     error_reporting(E_ALL);
     ini_set("display_errors", 1);
-
-
-    echo "POST BAŞLADI <br>";
-
 
     $username = "TestUser";
     $password = "test1215";
@@ -65,13 +60,13 @@
     curl_setopt($ch, CURLOPT_POSTFIELDS, $xml);
 
     if (curl_errno($ch)){
-        echo "HATA <br>";
+        echo "ERROR : <br>";
         echo curl_errno($ch) ;
         echo curl_error($ch);
     }else{
-        echo "SONUC <br>";
+        echo "RESPONSE : <br>";
         $response = curl_exec($ch);
-        print_r($response);
+        //print_r($response);
         curl_close($ch);
 
 
@@ -134,9 +129,6 @@
             echo "Bilinmeyen Hata<br>";
         }
 
-
     }
-
-    echo "<br>POST BİTTİ <br>";
 
 ?>
